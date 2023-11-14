@@ -1,0 +1,10 @@
+body{
+    height: 590px; 
+    background-color: antiquewhite;
+    padding: 1%; 
+    border: 6px Solid Black; 
+    width: 300px; 
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius: 13px;  
+}
