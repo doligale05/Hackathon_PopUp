@@ -1,38 +1,298 @@
 html{
-    display:flex; 
+    background-color: whitesmoke;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
 }
+
 body{
-    margin-top: 40px; 
+    background-color: rgb(80, 138, 186);
+
     height: 590px; 
-    background-color: rgb(255,255, 200);
-    padding: 0.25%; 
-    border: 7px Solid Black; 
-    width: 300px; 
-    max-width:300px; 
+    width: 300px;
+
+    border: 7px solid black;
     -moz-border-radius: 10px; 
     -webkit-border-radius: 10px; 
-    border-radius: 13px;  
+    border-radius: 13px;
 }
 
 .header{
+    /*
+    background-color: rgb(187, 217, 241);
+    */
+    background-color: rgb(0, 100, 230);
+   
+    width: 300px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom: 3px Solid Black;
+
+    position: fixed;
+    z-index: 3;
+
     font-size: 28px; 
     font-family: 'Mochiy Pop One', sans-serif;
-    border-bottom: 3px Solid Black;
+    color: white; 
+}
+/*
+#set{
+    width: 6%;
+
+    position:absolute;
+    top: 1px;
+    right: 1px;
+    z-index: 3;
+}
+*/
+#phone_pages{
+    overflow-y: scroll;
+
+    margin-top: 59px;
+
+    max-height: 489px;
+    max-width: 300px;
+
+    z-index: 0;
 }
 
-.taskBar{
+#phone_pages::-webkit-scrollbar { /*chrome*/
+    display: none;
+}
+
+#phone_pages{ /* Firefox */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+}
+
+#area{
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    font-size: 20px;
+}
+
+.item{
+margin-top: 10px;
+}
+
+#label{
+    margin-bottom: -10px;
+}
+
+#event{
+    height: 150px;
+    width: 220px;
+
+    display: flex;
+    justify-content: center;
+    
+    z-index: 0;
+
+    margin: auto;
+    margin-bottom: -75px;
+
+    border: 2px solid black;
+
+
+}
+
+.card{
+    background-color: rgb(245, 245 ,245);
+
+    margin: auto;
+    margin-top: 10px;
+
+    width: 220px;
+    height: 120px;
+
+    position:relative; 
+    top:0px; right:0px; bottom:0px; left:0px; 
+    z-index: 1;
+
+    border: 2px solid black;
+    border-top: 0px;
+
+    font-weight: bold;
+    text-align: left;
+}
+
+.card:hover{
+    background-color: rgb(225, 225 ,225);
+}
+
+#phone_account{
+    margin-bottom: 480px;
+
+    color: white;
+    font-size: 20px;
+}
+
+#account_header{
+    
+    background-color: rgb(80, 138, 186);
+    margin-top: 3px;
+
+    height: 200px;
+    width: 300px;
+
+    position: absolute;
+    z-index: 5;
+    
+    border-bottom: 3px Solid white 
+}
+
+#acc_info{
+    position: absolute;
+    top: -5px;
+    right: 40px;
+
+    border-bottom: 3px Solid white;
+}
+
+#acc_text{
+    margin-left: 5px;
+    margin-bottom: -10px;
+}
+
+#history{
+    margin-left: 5px;
+    position: absolute;
+}
+
+#history_content{
+    position: relative;
+    top: 200px;
+    max-height: 500px;
+
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+.toolbar{
     background-color: #333;
+
+    width: 300px; 
+    height: 59px;
+
+
+    margin-top: -18px;
+
+    position: absolute;
+    top: 562px;
+  
     color: #fff;
     text-align: center;
-    width: 300px; 
+    
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top: 3px Solid Black;
+
+    z-index: 3;
 }
+
 #footer {
+    width: 100%;
+
     position: fixed;
     bottom: 0;
-    width: 100%;
+}
+
+#drop{
+    width: 30px;
+
+    position:absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 3;
+}
+
+#drop:hover{   
+    opacity: .5;
+}
+
+#donate{
+    width: 30px;
+
+    position:absolute;
+    top: 15px;
+    left: 100px;
+    z-index: 3;
+}
+
+#donate:hover{
+    opacity: .5;
+}
+
+#search{
+    width: 30px;
+
+    position:absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 3;
+}
+
+#search:hover{
+    opacity: .5;
+}
+
+#account{
+    width: 30px;
+
+    position:absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 3;
+}
+
+#account:hover{
+    opacity: .5;
+}
+
+#load{
+    background-color: rgb(187, 217, 241);
+    
+    width: 300px;
+    height: 591px;
+
+    position:absolute; 
+    top: 12px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    color: white;
+    font-size: 28px; 
+    font-family: 'Mochiy Pop One', sans-serif;
+    
+}
+
+#logo{
+    width: 95%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 

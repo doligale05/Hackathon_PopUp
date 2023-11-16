@@ -1,32 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="main_js.js"></script>
-        <link href="main_css.css" rel="stylesheet" type="text/css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
         <title>Pop-Up!</title>
+
+        <!--css link-->
+        <link rel="stylesheet" href="main_css.css">
+
+        <!--java link-->
+        <script src="main_js.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
     </head>
+
     <body>
-        <div class="header" align="center"> 
-            PopUp!      
+       
+      <!-- the upper part-->  
+    <div class = "header"> 
+        <p>Volunteer</p>
+        <p>Me</p>
+    </div>
+
+    <!-- the main content -->  
+    <div id = "phone_pages">
+        
+        <div id = "phone_home">
+          <h1 id = "area">Near You</h1>
+
+            <div class = "item">
+               <img id = "event" src="images/heart.png">  
+                <div class = "card">
+                    <p>Hattisburg,MS | Heart Walk</p>
+                    <p>Time: 12:00pm</p>
+                </div>
+            </div>
+
+            <div class = "item">
+                <img id = "event" src="images/dog.png">  
+                <div class = "card">
+                    <p>Hattisburg,MS | Animal Shelter</p>
+                    <p>Time: 12:00pm-6:00pm</p>
+                </div>
+            </div>
+
+            <div class = "item">
+                <img id = "event" src="images/habit.png">  
+                <div class = "card">
+                    <p>Hattisburg,MS | Community Service</p>
+                    <p>Time: 10:00am-2:00pm</p>
+                </div>
+            </div>
+
+            <div class = "item">
+                <img id = "event" src="images/forrest.png">  
+                <div class = "card">
+                    <p>Hattisburg,MS | Hospice Care</p>
+                    <p>Time: 10:00pm-5:00pm</p>
+                </div>
+            </div>
+
         </div>
 
+        <div id = "phone_account">
+            <div id = "account_header">
+                <img id = "acc" src="images/account.png"> 
+                <p id = "acc_info">Account Information</p>
+                <p id = "acc_text">Name: John Doe</p>
+                <p id = "acc_text">Availabe hour:s 10:00am - 8:00pm</p>
+                <p id = "acc_text">Email: something@gmail.com</p>
+                <p id = "history">History</p>
+            </div>
 
+            <div id="history_content">   
+                <div class = "item">
+                    <img id = "event" src="images/heart.png">  
+                    <div class = "card">
+                        <p>Hattisburg,MS | Heart Walk</p>
+                        <p>Time: 12:00pm</p>
+                    </div>
+                </div>
+ 
+                <div class = "item">
+                    <img id = "event" src="images/dog.png">  
+                    <div class = "card">
+                        <p>Hattisburg,MS | Animal Shelter</p>
+                        <p>Time: 12:00pm-6:00pm</p>
+                    </div>
+                </div>
+ 
+                <div class = "item">
+                    <img id = "event" src="images/habit.png">  
+                    <div class = "card">
+                        <p>Hattisburg,MS | Community Service</p>
+                        <p>Time: 10:00am-2:00pm</p>
+                    </div>
+                </div>
+ 
+                <div class = "item">
+                    <img id = "event" src="images/forrest.png">  
+                    <div class = "card">
+                        <p>Hattisburg,MS | Hospice Care</p>
+                        <p>Time: 10:00pm-5:00pm</p>
+                    </div>
+                </div>
+            </div>
 
+        </div>
 
+    </div>
 
-
-        <div class="taskBar" align="center">
+    <!-- the lower part-->  
+    <div class="toolbar">
         <footer>
-            <p>Testing</p>
-
+            <img id = "drop" src="images/drop.png"> 
+            <img id = "donate" src="images/donate.png"> 
+            <img id = "search" src="images/search.png"> 
+            <img id = "account" src="images/account.png"> 
         </footer>
-        </div>
+    </div>
+
+    <!--load screen-->
+    <div id="load">
+        <img id = "logo" src="images/logo.jpg"> 
+    </div>
 
     </body>
-
 
 </html>
