@@ -43,16 +43,6 @@ body{
     color: white; 
 }
 
-/*
-#set{
-    width: 6%;
-
-    position:absolute;
-    top: 1px;
-    right: 1px;
-    z-index: 3;
-}
-*/
 #phone{
     overflow-y: scroll;
 
